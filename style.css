@@ -1,16 +1,14 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-
 
 body {
     font-family: 'Poppins', sans-serif;
     list-style: none;
     text-decoration: none;
 }
-
 
 header {
     position: fixed;
@@ -62,8 +60,8 @@ nav {
     color: white;
     font-size: 30px;
     cursor: pointer;
+    display: none; /* Hide by default on larger screens */
 }
-
 
 .hero {
     height: 100%;
@@ -119,7 +117,7 @@ section {
 .hero-text a {
     display: inline-block;
     color: white;
-    background: #002240; /* Changed to a color similar to your gradient */
+    background: #002240;
     border: 1px solid transparent;
     padding: 12px 30px;
     line-height: 1.4;
@@ -187,6 +185,7 @@ section {
     transform: translateY(-5px);
 }
 
+/* Responsive Styling */
 @media (max-width: 1535px) {
     header {
         padding: 15px 3%;
@@ -244,30 +243,37 @@ section {
     }
 }
 
+/* Mobile-specific navlist adjustments */
 @media (max-width: 990px) {
     #menu-icon {
-        display: block;
+        display: block; /* Show menu icon on smaller screens */
     }
+
     .navlist {
-        position: absolute;
-        top: 100%;
+        position: fixed;
+        top: 0;
         right: -100%;
         width: 300px;
-        height: 40vh;
+        height: 100vh;
         background: #002240;
         display: flex;
-        align-items: center;
         flex-direction: column;
+        align-items: center;
+        justify-content: center;
         padding: 50px 20px;
-        transition: all 0.55s ease;
+        transition: right 0.55s ease;
+        z-index: 99;
     }
-    .navlist a {
-        display: block;
 
+    .navlist a {
+        color: white;
+        font-size: 18px;
         margin: 8px 0;
+        text-decoration: none;
     }
+
     .navlist.open {
-        right: 0%;
+        right: 0; /* Slide in from the right */
     }
 }
 
@@ -277,4 +283,3 @@ section {
         height: auto;
     }
 }
-
