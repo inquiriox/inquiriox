@@ -1,33 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>homepage</title>
     <link rel="stylesheet" type="text/css" href="style.css">
-    <!---mmmmm-->
     <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
-
     <link href="https://cdn.jsdelivr.net/npm/remixicon@3.6.0/fonts/remixicon.css" rel="stylesheet">
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 </head>
-
 <body>
     <header>
-        <a href="#" class="logo">InquiroX</a>
+        <a href="index.html" class="logo">InquiroX</a>
         <ul class="navlist">
             <li><a href="#">Home</a></li>
             <li><a href="about.html">About</a></li>
-
             <li><a href="project.html">Projects</a></li>
-            
             <li><a href="team.html">Team</a></li>
-
-            <li><a href="team.html"></a></li>
             <li><a href="Contact.html">Contact</a></li>
             <li><a href="register.html">Register</a></li>
         </ul>
@@ -36,29 +25,34 @@
 
     <section class="hero">
         <div class="hero-text">
-            
-            <h4> National Research club</h4>
+            <h4>National Research Club</h4>
             <h1>InquiroX</h1>
-            <p>
-                InquirioX is a non-profit organization that offers students research opportunities and competitions to foster academic growth. Through mentorship and workshops, students gain hands-on experience, develop critical thinking skills, and showcase their research on global platforms, preparing them for future scientific careers.</p>
+            <p>InquiroX is a non-profit organization offering students research opportunities and competitions to foster academic growth.</p>
             <a href="projects.html">Projects</a>
             <a href="register.html" class="ctaa">Register</a>
         </div>
         <div class="hero-image">
-             <img src="WhatsApp_Image_2024-10-19_at_23.13.38_84faac2a-removebg-preview.png" alt="">  </div>
-         </section>
-         <div class="icons">
-            <div class="icons">
-                <a href="https://t.me/gjfisikshs" target="_blank" aria-label="Telegram"><i class="ri-telegram-line"></i></a>
-                <a href="https://www.instagram.com/inquiriox/" target="_blank" aria-label="Instagram"><i class="ri-instagram-line"></i></a>
-                <a href="https://chat.whatsapp.com/LXtBsAzWYgo1E9ElPWMLvL" target="_blank" aria-label="WhatsApp"><i class="ri-whatsapp-line"></i></a>
-                <a href="mailto:inquirioxplorers@gmail.com" target="_blank" aria-label="Email"><i class="ri-mail-line"></i></a>
-            </div>
-            
-   
+            <img src="WhatsApp_Image_2024-10-19_at_23.13.38_84faac2a-removebg-preview.png" alt="">
+        </div>
+    </section>
+
+    <div class="icons">
+        <a href="https://t.me/gjfisikshs" target="_blank" aria-label="Telegram"><i class="ri-telegram-line"></i></a>
+        <a href="https://www.instagram.com/inquiriox/" target="_blank" aria-label="Instagram"><i class="ri-instagram-line"></i></a>
+        <a href="https://chat.whatsapp.com/LXtBsAzWYgo1E9ElPWMLvL" target="_blank" aria-label="WhatsApp"><i class="ri-whatsapp-line"></i></a>
+        <a href="mailto:inquirioxplorers@gmail.com" target="_blank" aria-label="Email"><i class="ri-mail-line"></i></a>
+    </div>
+
     <script src="https://unpkg.com/scrollreveal"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const menuIcon = document.getElementById("menu-icon");
+            const navList = document.querySelector(".navlist");
 
-    <script src="js/script.js"></script>
+            menuIcon.addEventListener("click", function() {
+                navList.classList.toggle("open");
+            });
+        });
+    </script>
 </body>
-
 </html>
