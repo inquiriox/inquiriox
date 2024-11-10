@@ -29,14 +29,7 @@ header {
     color: white;
     text-decoration: none;
 }
-#menu-icon {
-    position: absolute;
-    top: 20px; /* Adjust as needed to align vertically within the header */
-    right: 20px; /* Adjust to create some space from the right edge */
-    font-size: 24px;
-    cursor: pointer;
-    color: white;
-    display: block;
+
 }
 nav {
     display: flex;
