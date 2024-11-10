@@ -55,6 +55,12 @@ nav {
 .navlist a:hover {
     color: #00bcd4;
 }
+#menu-icon {
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+}
+
 
 /* Team Section Styles */
 .team-section {
