@@ -40,7 +40,7 @@
     justify-content: center;
     align-items: center;
     gap: 30px; /* Increased gap for more space between icons */
-    margin-top: 20px; /* Ensures spacing above the icons */
+    margin-top: 50px; /* Ensures spacing above the icons */
     flex-wrap: wrap;
 }
 
