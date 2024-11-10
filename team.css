@@ -23,14 +23,11 @@ header {
     text-decoration: none;
 }
 
-/* Centered Navigation Menu Styles */
 .navlist {
     list-style: none;
     display: flex;
     margin: 0;
     padding: 0;
-    flex-grow: 1;
-    justify-content: center;
 }
 
 .navlist li {
@@ -44,9 +41,8 @@ header {
 }
 
 .navlist a:hover {
-    color: #ffcc00;
+    color: #ffcc00; /* Change color on hover */
 }
-
 /* Mobile Menu Icon */
 #menu-icon {
     font-size: 24px;
