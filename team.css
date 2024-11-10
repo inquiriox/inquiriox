@@ -1,156 +1,76 @@
-/* Team Page Styles */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    font-family: 'Poppins', sans-serif;
-    background-color: #00111F;
-    color: #fff;
-}
-
 /* Header Styles */
 header {
-    background: rgba(0, 17, 31, 0.8);
-    padding: 25px;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #00111F;
+    position: relative;
     z-index: 100;
 }
 
-
+/* Logo Style */
 .logo {
-    font-size: 28px; /* Larger logo text */
-    font-weight: 700;
     color: white;
+    font-size: 24px;
     text-decoration: none;
 }
 
-}
-nav {
-    display: flex;
-}
-
+/* Navigation Menu Styles */
 .navlist {
     list-style: none;
     display: flex;
+    margin: 0;
+    padding: 0;
 }
 
+/* Navigation Links */
 .navlist li {
-    margin-right: 25px;
+    margin: 0 15px;
 }
 
 .navlist a {
     color: white;
     text-decoration: none;
-    font-size: 18px; /* Slightly larger font size */
-    font-weight: 600;
-    transition: all 0.55s ease;
+    font-weight: 500;
 }
 
 .navlist a:hover {
-    color: #00bcd4;
+    color: #ffcc00;
 }
+
+/* Mobile Menu Icon */
 #menu-icon {
-    color: white;
-    font-size: 30px;
-    cursor: pointer;
-}
-
-
-/* Team Section Styles */
-.team-section {
-    padding: 120px 8%; /* Increased padding */
-    text-align: center;
-    background-color: #002240;
-}
-
-.team-section h1 {
-    font-size: 42px; /* Larger title */
-    color: #00bcd4;
-    font-family: 'Permanent Marker', sans-serif;
-    margin-bottom: 15px;
-}
-
-.team-intro {
-    font-size: 18px; /* Larger introductory text */
-    color: #cfd8dc;
-    margin-bottom: 50px;
-    max-width: 800px;
-    margin: auto;
-}
-
-.team-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Wider cards */
-    gap: 25px;
-}
-
-.team-member {
-    background: #00111F;
-    border-radius: 10px;
-    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.3);
-    padding: 25px; /* Increased padding for a bigger card */
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.team-member:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 5px 18px rgba(0, 0, 0, 0.4);
-}
-
-.team-member img {
-    width: 100%;
-    border-radius: 50%;
-    margin-bottom: 20px;
-}
-
-.team-member h2 {
-    font-size: 24px; /* Larger name text */
-    color: #00bcd4;
-    margin-bottom: 8px;
-}
-
-.team-member p {
-    font-size: 16px; /* Larger role text */
-    color: #cfd8dc;
-}
-
-/* Footer Styles */
-footer {
-    text-align: center;
-    padding: 25px;
-    background-color: #00111F;
-    color: #cfd8dc;
-    font-size: 16px; /* Larger footer text */
-    margin-top: 50px;
-}
-
-/* Social Icons in Footer */
-.footer-icons {
-    display: flex;
-    justify-content: center;
-    gap: 15px;
-}
-
-.footer-icons a {
-    
-    color: #b1d3f0 ;
     font-size: 24px;
-    background: #002240;
-    padding: 10px;
-    border-radius: 50%;
-    transition: all 0.3s ease;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    cursor: pointer;
+    color: white;
+    display: none;
 }
 
-.footer-icons a:hover {
-    background-color: #000000;
-    transform: scale(1.1);
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .navlist {
+        position: absolute;
+        top: 60px;
+        right: 0;
+        background-color: #00111F;
+        width: 100%;
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px 0;
+    }
+
+    .navlist.open {
+        display: flex;
+    }
+
+    #menu-icon {
+        display: block;
+    }
+
+    /* Hide nav list when the menu icon is displayed */
+    .navlist li {
+        margin: 10px 0;
+    }
 }
