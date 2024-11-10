@@ -58,13 +58,9 @@ nav {
 .navlist a:hover {
     border-bottom: 2px solid white;
 }
-
-#menu-icon {
-    color: white;
-    font-size: 30px;
-    cursor: pointer;
-}
-
+   #menu-icon {
+        display: block;
+    }
 /* Spacer for header */
 .spacer {
     height: 90px; /* Adjust the height as needed */
